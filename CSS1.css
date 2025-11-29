@@ -21,3 +21,11 @@ footer{
     color: antiquewhite;
     padding: 1em 0;
 }
+h1{
+    transition: transform 0.3s;
+}
+h1:hover{
+    transform: scale(1.1);
+    color: burlywood;
+    
+}
