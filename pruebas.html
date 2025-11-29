@@ -4,60 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="CSS1.css">
 </head>
 <body>
-
-    <!-- mostrar texto con {{}} -->
-     <div>
-        <input type="text" ng-model="nombre" placeholder="escribe tu nombre">
-        <p>Hola {{nombre}}</p>
-     </div>
-     <hr>
-     <!-- suma de dos numeros -->
-      <div>
-        <input type="number" ng-model="a"> +
-        <input type="number" ng-model="b"> =
-        {{a + b}} 
-      </div>
-      <hr>
-      <!-- uso de ng-repeat -->
-      <div ng-init="frutas['manzana', 'platano','pera']">
+    <header>
+        <h1>Pepito</h1>
+        <p>Estudiante Ingenieria en sistemas</p>
+    </header>
+    <section id="acercade">
+        <h2>Su info</h2>
+        <p>Sus intereses</p>
+    </section>
+    <section id="habilidades">
+        <h2>habilidades</h2>
         <ul>
-            <li ng-repeat="fruta in frutas">{{frutas}}</li>
+            <li>html y CSS</li>
+            <li>javascript</li>
+            <li>Diseño responsivo</li>
         </ul>
-      </div>
-      <hr>
-      <!-- mostrar u ocultar contenido -->
-       <div>
-        <input type="checkbox" ng-model="mostrar">Mostrar texto
-        <p ng-show="mostrar">Hola como estas</p>
-       </div>
-       <hr>
-       <!-- controlador basico -->
-        <div ng-controller="miCtrl">
-            <p>Nombre desde el controlador: {{nombre}}</p>
-        </div>
-        <hr>
-        <!-- lista dinamica -->
-         <div ng-controller="listaCrtl">
-            <ul>
-                <li ng-repeat="tarea in tareas">{{tarea}}</li>
-            </ul>
-            <input type="text" ng-model="nuevaTarea" placeholder="Nueva Tarea">
-            <button ng-click="agregar()">Agregar</button>
-         </div>
-         <hr>
-         <!-- Filtrar resultados -->
-          <div ng-init="personas=[
-          {nombre:'Ana'}, {nombre:'Luis'}, {nombre:'Pedro'}, {nombre:'Ivo'}
-          ]">
-            <input type="text" ng-model="busqueda" placeholder="Buscar persona">
-            <ul>
-                <li ng-repeat="p in personas | filter:busqueda">{{p.nombre}}</li>
-            </ul>
-        </div>
-        
+    </section>
+    <footer>
+        <p>Pagina de Pepito</p>
+    </footer>
     <script src="JVS1.js"></script>
 </body>
 </html>
