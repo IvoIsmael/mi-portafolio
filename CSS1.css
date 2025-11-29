@@ -7,6 +7,10 @@ body{
     margin: 0;
     padding: 0;
 }
+h1,h2,h3{
+    text-align: center;
+    color: darkblue;
+}
 header{
     background-color: rgba(0,0,0,0.2);
     color: white;
@@ -17,7 +21,11 @@ h1 span{
 }
 section{
     margin: 2em auto;
-    width: 600px;
+    width: 900px;
+    background: gray;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
 }
 img{
@@ -25,6 +33,8 @@ img{
     border-radius: 50%;
     border: 3px solid white;
 }
+
+
 footer{
     background-color: black;
     color: antiquewhite;
@@ -37,4 +47,35 @@ h1:hover{
     transform: scale(1.1);
     color: burlywood;
     
+}
+#habilidades ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#habilidades li{
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+#habilidades li:hover{
+    background: #2980b9;
+}
+#proyectos article{
+    background: #ecf0f1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+#proyectos article:hover{
+        transform: scale(1.05);
+}
+img:hover{
+transform: scale(1.1);
 }
